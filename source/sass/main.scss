@@ -1,19 +1,212 @@
-// ######### RESET #################
 * {
 
-    padding: 0;
     margin: 0;
-
+    padding: 0;
     box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
 
 }
 
-// ########## CSS ##################
-html,
 body {
 
-    overflow-x: hidden;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: #eee;
 
-    background: whitesmoke;
+}
 
-} 
+
+
+nav {
+
+    width: 100%;
+    background: #34BDFF;
+    box-shadow: 0 0 3px #333;
+    position: fixed;
+    transition: all 0.3s ease-out;
+
+}
+
+.nav-elements {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+    transition: all 0.3s ease-out;
+
+    & a {
+
+        color: #333;
+        text-decoration: none;
+
+    }
+
+    & a:visited {
+            
+        color: #333;
+
+    }
+
+    & h2 {
+
+        transition: all .3s ease-in-out;
+
+        &:hover {
+
+            font-weight: 100;
+        
+        }
+
+    }
+
+}
+
+
+.nav-links {
+
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    & h2 {
+
+        flex: 1;
+        color: #333;
+
+    }
+
+    & li {
+
+        padding: 0;
+        width: 100px;
+        transition: all 0.2s ease;
+
+        &:hover {
+
+            transform: translateX(5px);
+            font-weight: bold;
+
+        }
+            
+
+    }
+
+}
+ 
+
+
+
+h1 {
+
+    padding: 1.5rem;
+
+}
+
+p {
+
+    text-align: justify;
+
+}
+
+p::first-letter {
+
+    font-size: 1.5rem;
+    color: rgb(0, 144, 216);
+
+}
+
+.adapt {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 1rem 1rem 0;
+    margin-bottom: 3rem;
+
+    & img {
+
+        width: 50%;
+
+    }
+
+}
+
+.dummy-adapt {
+
+    padding: 2rem 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+
+.improvise {
+
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+    & h1 {
+
+        text-align: right;
+        padding-right: 8rem;
+
+    }
+
+    & img {
+
+        width: 60%;
+        padding: 2rem;
+
+    }
+
+}
+
+ 
+.dummy-improvise {
+
+    display: flex;
+   
+    align-items: center;
+
+}
+
+.overcome {
+
+    padding: 2rem;
+    background: rgba(52, 187, 255, 0.287);
+
+    & h1 {
+
+        text-align: center;
+
+    }
+
+    & img {
+
+        width: 90%;
+
+    }
+        
+
+}
+
+
+@media screen and (min-width: 1000px) {
+main {
+    width: 75%;
+    margin: 0 auto;
+}
+.nav-elements {
+    width: 75%;
+}
+}
