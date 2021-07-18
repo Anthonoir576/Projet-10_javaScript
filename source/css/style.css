@@ -27,18 +27,19 @@ nav {
   align-items: center;
   width: 90%;
   margin: auto;
-  height: 15vh;
+  height: 10vh;
   transition: all 0.3s ease-out;
 }
 .nav-elements a {
   color: #333;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 .nav-elements a:visited {
   color: #333;
 }
 .nav-elements h2 {
-  width: 255px;
+  width: 160px;
   transition: all 0.3s ease-in-out;
 }
 .nav-elements h2 a {
@@ -49,6 +50,7 @@ nav {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  width: 25vw;
 }
 .nav-links h2 {
   flex: 1;
@@ -56,8 +58,8 @@ nav {
 }
 .nav-links li {
   padding: 0;
-  width: 100px;
-  margin: 0.5rem;
+  width: 55px;
+  margin-right: 0.5rem;
   transition: all 0.2s ease;
 }
 .nav-links li:hover {
@@ -71,7 +73,8 @@ i {
 }
 
 h1 {
-  padding: 1.5rem;
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 
 p {
@@ -105,9 +108,9 @@ p::first-letter {
   padding: 1rem;
   margin-bottom: 3rem;
 }
-.improvise h1 {
-  text-align: right;
-  padding-right: 8rem;
+.improvise h2 {
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 .improvise img {
   width: 60%;
