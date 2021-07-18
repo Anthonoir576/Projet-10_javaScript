@@ -38,10 +38,11 @@ nav {
   color: #333;
 }
 .nav-elements h2 {
+  width: 255px;
   transition: all 0.3s ease-in-out;
 }
-.nav-elements h2:hover {
-  font-weight: 100;
+.nav-elements h2 a {
+  width: 225px;
 }
 
 .nav-links {
@@ -56,11 +57,17 @@ nav {
 .nav-links li {
   padding: 0;
   width: 100px;
+  margin: 0.5rem;
   transition: all 0.2s ease;
 }
 .nav-links li:hover {
   transform: translateX(5px);
   font-weight: bold;
+}
+
+i {
+  margin-left: 0.6rem;
+  font-size: 20px;
 }
 
 h1 {
